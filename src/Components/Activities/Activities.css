@@ -7,7 +7,7 @@
 .excercises-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 45px;
+    gap: 45px 10px;
     padding: 5rem 2rem;
 }
 
@@ -31,17 +31,21 @@
 }
 @media screen and (max-width: 567px) {
     .excercises-container{
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
         padding: .5rem;
+        text-align: start;
     }
     .activities{
-       
-        grid-template-columns: 1fr 1fr;
+       display: flex;
+       flex-direction: column-reverse;
     }
     .cart-container{
         background-color: rgba(128, 128, 128, 0.219);
         padding: .5rem ;
     }
-    
+    .heading{
+        text-align: center;
+    }
 
 }

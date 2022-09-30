@@ -1,10 +1,10 @@
 .excercise{
     width: 250px;
-    height: 400px;
-    border: 1px solid grey;
+    height: 420px;
     padding: .5rem;
     position: relative;
     font-size: small;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
     
 }

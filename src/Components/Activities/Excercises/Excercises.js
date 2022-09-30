@@ -15,8 +15,11 @@ const Excercises = (props) => {
     return (
 
         <div className='excercise'>
-             <div>
-                <img src={img} alt=''></img>
+             <div className='excercise-details'>
+                <div>
+                    <img src={img} alt=''></img>
+                </div>
+                
                 <h4>{name}</h4>
                 <p>{p}</p>
                 <h5>For age : {age}</h5>

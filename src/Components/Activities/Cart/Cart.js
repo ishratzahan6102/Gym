@@ -50,6 +50,10 @@ const Cart = ({cart}) => {
         }
     
         const notify = () => toast("Activity Completed!");
+        
+          
+          
+      
     return (
         <div className='cart'>
             <div className='members-info'>
@@ -83,11 +87,12 @@ const Cart = ({cart}) => {
              </div>
              <div className='details-container'>
              <h3>Excercise Details</h3>
-             <h4 className='details'>Excercise Time: {time} seconds </h4>
+             <h4 className='details'>Exercise Time:<span id='exercise-time'> {time}</span> seconds</h4>
              <h4 className='details' >Break Time: <span id='break-time'>0</span> seconds</h4>
              </div>
              <div>
-                <p className='btn' onClick={notify}>Activity Completed</p>
+                <p className='btn'  onClick={notify}>Activity Completed</p>
+                
                 <ToastContainer />
              </div>
         </div>

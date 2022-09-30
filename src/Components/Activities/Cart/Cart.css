@@ -71,3 +71,20 @@
 .cart small{
     color: gray;
 }
+@media screen and (max-width: 567px) {
+    .cart{
+        text-align: center;
+    }
+    .members-info{
+        justify-content: center;
+    }
+    .info{
+        justify-content: center;
+    }
+    .info-details{
+        justify-content: center;
+    }
+    .add-break{
+        justify-content: center;
+    }
+}

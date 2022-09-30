@@ -8,7 +8,7 @@ const Blog = () => {
             <p>Question 2 : Difference between props and state?</p>
             <p>Answer : Props are used to pass data from one component to another. The state is a local data storage that is local to the component only and cannot be passed to other components. The this.setState property is used to update the state values in the component.</p>
             <p>Question 3 : Usage of useEffect?</p>
-            <p>Answer : useEffect() is for side-effects. A functional React component uses props and/or state to calculate the output. If the functional component makes calculations that don't target the output value, then these calculations are named side-effects.</p>
+            <p>Answer : useEffect() is for side-effects. A functional React component uses props and/or state to calculate the output. If the functional component makes calculations that don't target the output value, then these calculations are named side-effects. It is also used for dependence issue.</p>
         </div>
     );
 };
