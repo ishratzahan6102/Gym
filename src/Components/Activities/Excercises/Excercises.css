@@ -1,0 +1,43 @@
+.excercise{
+    width: 250px;
+    height: 400px;
+    border: 1px solid grey;
+    padding: .5rem;
+    position: relative;
+    font-size: small;
+
+    
+}
+.excercise img{
+    width: 250px;
+    height: 200px;
+    border-radius: 8px;
+    
+}
+.product-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    color: white;  
+}
+button{
+    width: 100%;
+    padding: 0;
+    background-color: olivedrab;
+    border: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    
+}
+@media screen and (max-width: 567px) {
+    .excercise img{
+        width: 200px;
+        height: 200px;
+    }
+    .excercise{
+        width: 210px;
+        height: 400px;
+    }
+
+}

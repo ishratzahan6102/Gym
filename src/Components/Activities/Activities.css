@@ -1,0 +1,32 @@
+.activities{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    text-align: start;
+    
+}
+.excercises-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 45px;
+    padding: 5rem 2rem;
+}
+.cart-container{
+    background-color: rgba(128, 128, 128, 0.219);
+    padding: 2rem ;
+}
+@media screen and (max-width: 1100px) {
+    .excercises-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 567px) {
+    .excercises-container{
+        grid-template-columns: repeat(1, 1fr);
+        padding: .5rem;
+    }
+    .activities{
+       
+        grid-template-columns: 1fr 1fr;
+    }
+
+}

@@ -1,0 +1,25 @@
+.header{
+    height: 80px;
+     background: #1C2B35;
+     display: flex;
+     justify-content: space-between;
+     color: white;
+     padding: 0 1rem;
+     align-items: center;
+}
+.logo {
+    width: 200px;
+    background-color: white;
+    color: olivedrab;
+    border-radius: .2rem;
+    padding: .5rem .1rem;
+}
+.menu{
+    display: flex;
+    list-style: none;
+}
+.menu a{
+    margin: 0 1rem;
+    text-decoration: none;
+    color: white;
+}
