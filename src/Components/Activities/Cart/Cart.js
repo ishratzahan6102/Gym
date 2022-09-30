@@ -1,6 +1,8 @@
 import React from 'react'
 import './Cart.css'
 import logo from '../../../images/player-1.png'
+import { ToastContainer, toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
 
 const Cart = ({cart}) => {
     console.log(cart)
@@ -15,33 +17,39 @@ const Cart = ({cart}) => {
           const breakText = document.getElementById('break-time');
           const timer = document.getElementById('break10');
           breakText.innerText = timer.innerText;
+          localStorage.setItem("Break-time", "10s")
+          
         }
       
         const shoot2 = () => {
           const breakText = document.getElementById('break-time');
           const timer = document.getElementById('break20');
           breakText.innerText = timer.innerText;
+          localStorage.setItem("Break-time", "20s")
         }
       
         const shoot3 = () => {
           const breakText = document.getElementById('break-time');
           const timer = document.getElementById('break30');
           breakText.innerText = timer.innerText;
+          localStorage.setItem("Break-time", "30s")
         }
       
         const shoot4 = () => {
           const breakText = document.getElementById('break-time');
           const timer = document.getElementById('break40');
           breakText.innerText = timer.innerText;
+          localStorage.setItem("Break-time", "40s")
         }
       
         const shoot5 = () => {
           const breakText = document.getElementById('break-time');
           const timer = document.getElementById('break50');
           breakText.innerText = timer.innerText;
+          localStorage.setItem("Break-time", "50s")
         }
-      
     
+        const notify = () => toast("Activity Completed!");
     return (
         <div className='cart'>
             <div className='members-info'>
@@ -54,7 +62,7 @@ const Cart = ({cart}) => {
 
             <div className='members-info-details'>
                 <div className='info'>
-                    <h4>75<small>Kg</small></h4>
+                    <h4>75<small>kg</small></h4>
                     <h4>6.5</h4>
                     <h4>25<small>years</small></h4>
                 </div>
@@ -64,14 +72,6 @@ const Cart = ({cart}) => {
                     <h6>Age</h6>
                 </div>
             </div>
-
-
-
-
-
-
-
-
 
                 <h4>Add a break</h4>
              <div className='add-break'>
@@ -87,7 +87,8 @@ const Cart = ({cart}) => {
              <h4 className='details' >Break Time: <span id='break-time'>0</span> seconds</h4>
              </div>
              <div>
-                <p className='btn'>Activity Completed</p>
+                <p className='btn' onClick={notify}>Activity Completed</p>
+                <ToastContainer />
              </div>
         </div>
     );

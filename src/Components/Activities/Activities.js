@@ -48,10 +48,15 @@ const Activities = () => {
     }
     return (
         <div className='activities'>
-            <div className='excercises-container'>
-            {
-                products.map(product => <Excercises key ={product.id} product={product} handleClick = {handleClick}></Excercises>)
-               }
+        <div className='heading'>
+            <h1>Be-pro Wrestler</h1>
+            <h3>Today's exercises</h3>
+            <div className='excercises-container' >
+                {
+                    products.map(product => <Excercises key ={product.id} product={product} handleClick = {handleClick}></Excercises>)
+                }
+            </div>
+            
             </div>
             <div className='cart-container'>
             <Cart cart={cart} 

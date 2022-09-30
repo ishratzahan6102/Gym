@@ -16,18 +16,18 @@
     height: 50px;
 }
 .members-info-details{
-    background-color: rgb(180, 177, 177) ;
+    background-color: rgba(180, 177, 177, 0.76) ;
     margin-top: 1rem;
     padding: .1rem .5rem;
     border-radius: .5rem;
+   padding-left: 1rem;
 }
 .info{
     display: flex;
     font-size: large;
-    
 }
 .info h4{
-    margin-right: .5rem;
+    margin-right: 1.5rem;
 }
 .info-details{
     display: flex;
@@ -36,7 +36,7 @@
    
 }
 .info-details h6{
-    margin-right: .5rem;
+    margin-right: 1rem;
 }
 .add-break{
     display: flex;
@@ -57,6 +57,9 @@
     padding: .5rem;
     font-size: small;
 }
+.add-break p:hover{
+    background-color: black ;
+}
 .btn{
     background-color: olivedrab;
     border-radius: .4rem; 
@@ -64,4 +67,7 @@
     top: 80;
     color: white;
     text-align: center;
+}
+.cart small{
+    color: gray;
 }
