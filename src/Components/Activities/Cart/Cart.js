@@ -52,7 +52,7 @@ const Cart = ({cart}) => {
                 </div>
             </div>
 
-            <div>
+            <div className='members-info-details'>
                 <div className='info'>
                     <h4>75<small>Kg</small></h4>
                     <h4>6.5</h4>

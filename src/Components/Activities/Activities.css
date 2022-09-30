@@ -28,5 +28,10 @@
        
         grid-template-columns: 1fr 1fr;
     }
+    .cart-container{
+        background-color: rgba(128, 128, 128, 0.219);
+        padding: .5rem ;
+    }
+    
 
 }
