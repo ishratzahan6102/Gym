@@ -26,12 +26,14 @@
 }
 @media screen and (max-width: 1100px) {
     .excercises-container{
-        grid-template-columns: repeat(2, 1fr);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 @media screen and (max-width: 567px) {
     .excercises-container{
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         gap: 10px;
         padding: .5rem;
         text-align: start;
