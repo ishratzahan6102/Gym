@@ -6,8 +6,9 @@ const Header = () => {
         <nav className='header'>
             <h3 className='logo'>Be-pro Wrestler</h3>
             <div className='menu'>
-                <a href='/home'>Blog</a>
+                <a href='/blog'>Home</a>
             </div>
+            
         </nav>
 
     );
